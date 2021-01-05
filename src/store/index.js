@@ -10,13 +10,13 @@ const Store = createStore({
         id: 1,
         type: 'service',
         title: 'A fine product here',
-        image: '/src/assets/images/merchants/img1.jpg',
+        image: '/assets/images/merchants/img1.jpg',
       },
       {
         id: 2,
         type: 'product',
         title: 'The best affordable price',
-        image: '/src/assets/images/merchants/img2.jpg',
+        image: '/assets/images/merchants/img2.jpg',
       },
       {
         id: 3,
@@ -28,7 +28,7 @@ const Store = createStore({
         id: 4,
         type: 'service',
         title: 'You may choose to use any form of payment',
-        image: '/src/assets/images/merchants/img3.jpg',
+        image: '/assets/images/merchants/img3.jpg',
       },
       {
         id: 5,
