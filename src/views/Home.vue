@@ -53,10 +53,13 @@ main.bg-white.py-5
               option(value='service') Service merchants
               option(value='product') Product merchants
 
-      .mt-3.products.container-fluid.px-4
-        .row.row-cols-1.row-cols-sm-2.row-cols-md-3.row-cols-xl-4
+      .products.container-fluid.px-4.py-2
+        .row.row-cols-1.row-cols-sm-2.row-cols-md-3.row-cols-xl-4(
+          v-if='merchants.length > 0'
+        )
           .col.p-2(v-for='merchant in merchants', :key='merchant.id')
             MerchantCard(:merchant-details='merchant')
+        p.m-0(v-else) No merchant found
 </template>
 
 <script>
