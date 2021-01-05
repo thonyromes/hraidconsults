@@ -1,5 +1,9 @@
 import { createStore } from 'vuex';
 
+import img1 from '../assets/images/merchants/img1.jpg';
+import img2 from '../assets/images/merchants/img2.jpg';
+import img3 from '../assets/images/merchants/img3.jpg';
+
 // prettier-ignore
 const filter = (item, query) => item.toLowerCase().includes(query.toLowerCase());
 
@@ -10,13 +14,13 @@ const Store = createStore({
         id: 1,
         type: 'service',
         title: 'A fine product here',
-        image: '/assets/images/merchants/img1.jpg',
+        image: img1,
       },
       {
         id: 2,
         type: 'product',
         title: 'The best affordable price',
-        image: '/assets/images/merchants/img2.jpg',
+        image: img2,
       },
       {
         id: 3,
@@ -28,7 +32,7 @@ const Store = createStore({
         id: 4,
         type: 'service',
         title: 'You may choose to use any form of payment',
-        image: '/assets/images/merchants/img3.jpg',
+        image: img3,
       },
       {
         id: 5,
